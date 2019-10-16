@@ -1,0 +1,913 @@
+/* DECLARING FONTS */
+@font-face {
+    font-family: UniSansThin;
+    src: url(../fonts/Uni%20Sans%20Thin.otf);
+}
+
+@font-face {
+	font-family: UniSansHeavy;
+	src:url(../fonts/Uni%20Sans%20Heavy.otf);
+}
+
+@font-face {
+	font-family: SkModern;
+	src:url(../fonts/Sk-Modernist-Regular.otf);
+}
+
+/* INDEX */
+
+#address {
+	font-family: UniSansHeavy;
+	background-color: #181818;
+	display: block;
+	width: 370px;
+	border: solid 1px #181818;
+	margin-left: auto;
+    margin-right: auto;
+	margin-top: 7px;
+}
+
+.mainHeader2 {
+	background-size: cover;
+	background-image: url(../img/HeaderImg.jpg);
+	background-repeat: no-repeat;
+	height:675px;
+	width: 100%;
+	font-family: UniSansHeavy;
+}
+
+.mainHeader2 nav a {
+	text-decoration:none;
+} 
+
+.mainHeader2 ul {
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mainHeader2 ul li {
+	margin-top: 30px;
+	display: inline-block;
+    width: 220px;
+    list-style: none;
+    vertical-align: middle;
+}
+
+.mainHeader2 ul li a {
+  text-decoration: none;
+  color: white;
+  padding-right:25px;
+}
+
+#aboutTitle2 {
+	text-align: center;
+	color: white;
+}
+
+#aboutTitle2 p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#aboutTitle2 .firstHead{
+	margin-top: 25px;
+}
+
+#aboutContent2 {
+	margin-top: 0;
+	width: 100%;
+	height: 510px;
+	background-image:url(../img/food10.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menuBtn {
+	background-color:#67da6d;
+	border: none;
+	display:inline-block;
+	cursor:pointer;
+	color:#FFF;
+	font-family:UniSansHeavy;
+	font-size:17px;
+	height: 60px;
+	width: 250px;
+	text-decoration:none;
+	margin-top: 20px;
+	padding-top: 0;
+	border-radius: 5px;
+}
+
+#selection {
+	width: 100%;
+	height: 800px;
+	background-color: #FFF;
+}
+
+#selection h2 {
+	font-family: UniSansThin;
+	font-size: 65px;
+	text-align: center;
+	padding-bottom: 0;
+	margin-bottom: 20px;
+	margin-top: 65px;
+}
+
+#selection .hr {
+	background-color: #67da6d;
+	height: 3px;
+	width: 200px;
+	border: none;
+}
+
+#selection .food{
+	display: block;
+	margin: 0 auto;
+}
+
+#selection table{
+	width: 100%;
+	margin-top: 60px;
+	border-collapse: collapse;
+}
+
+#selection td {
+	height: 300px;
+	/*width: 50%; or padding? */
+	table-layout: fixed;
+	overflow:hidden;
+	word-wrap:break-word;
+}
+
+#selection p {
+	text-align: center;
+	padding-left: 25%;
+	padding-right: 25%;
+	font-family: SkModern;
+	line-height: 150%;
+}
+							/* FIND US */
+#find-us {
+	background-color: #181818;
+	width: 100%;
+	height: 600px;
+}
+
+#find-us h2 {
+	font-family: UniSansThin;
+	font-size: 65px;
+	text-align: center;
+	padding-top: 75px;
+	color: #FFF;
+	margin-bottom: 20px;
+}
+
+#find-us .hr {
+	background-color: #67da6d;
+	height: 3px;
+	width: 150px;
+	border: none;
+}
+							/* End of FIND US */
+/* END OF INDEX */
+
+
+/* MENU */
+
+body {
+}
+
+#mySidenav a {
+	color: #818181;
+}
+
+#mySidenav a:hover{
+	color: #FFF;
+}
+.sidenav {
+	padding-top: 70px;
+    height: 100%;
+    width: 360px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+	left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+	font-family: UniSansHeavy;
+	color: #FFF;
+}
+
+.sidenav a {
+	padding-top: 20px;
+	padding-bottom: 5px;
+	text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: #FFF;
+    display: block;
+    transition: 0.3s;
+}
+
+#logo {
+	padding-right: 10px;
+}
+
+#hrLogo {
+	background-color: #333;
+	height: 2px;
+	width: 25px;
+	border: none;
+}
+
+hr {
+	background-color: #67da6d;
+	height: 3px;
+	width: 25px;
+	border: none;
+}
+
+/*END MENU*/
+
+/* GRID (FOR MENU) */
+
+#rig {
+    max-width: auto;
+    margin:0 auto; /*center aligned*/
+    padding-left: 365px; /*365px*/
+    font-size:0; 
+    list-style:none;
+}
+#rig li {
+    display: inline-block;
+    width: 25%;
+    vertical-align:middle;
+    box-sizing:border-box;
+    margin:0;
+    padding:25px;
+}
+        
+/* The wrapper for each item */
+.rig-cell {
+    display:block;
+    position: relative;
+    overflow:hidden;
+}
+        
+/* If have the image layer */
+.rig-img {
+    display:block;
+    width: 100%;
+    height: auto;
+    border:none;
+    transform:scale(1);
+    transition:all 1s;
+}
+
+#rig li:hover .rig-img {
+    transform:scale(1.05);
+}
+        
+/* If have the overlay layer */
+.rig-overlay {
+    position: absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: #181818 url(img/link.png) no-repeat center 20%;
+    background-size:50px 50px;
+    opacity:0;
+    transition:all 0.6s;
+}
+#rig li:hover .rig-overlay {
+    opacity:0.8;
+}
+
+/* If have captions */
+.rig-text {
+    display:block;
+    padding:0 30px;
+    box-sizing:border-box;
+    position:absolute;
+    left:0;
+    width:100%;
+    text-align:center;
+    /*text-transform:capitalize;*/
+    font-size:18px;
+    font-weight:bold;
+    font-family: UniSansHeavy;
+    font-weight:normal!important;
+    top:20%;
+    color:white;
+    opacity:0;
+    transform:translateY(-20px);
+    transition:all .3s;
+}
+#rig li:hover .rig-text {
+    transform:translateY(0px);
+    opacity:0.9;
+}
+
+#rig li p{
+	margin: 0;
+	padding: 0;
+	font-family: SkModern;
+	font-size: 14px;
+}
+/* END GRID */
+
+/* ABOUT PAGE */
+.mainHeader {
+	background-size: cover;
+	background-image: url(../img/restaurant2.png);
+	background-position: 600px -250px; 
+	height:600px;
+	font-family: UniSansHeavy;
+}
+
+.mainHeader nav a {
+	text-decoration:none;
+} 
+
+.mainHeader ul {
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mainHeader ul li {
+	margin-top: 30px;
+	display: inline-block;
+    width: 220px;
+    list-style: none;
+    vertical-align: middle;
+}
+
+.mainHeader ul li a {
+  text-decoration: none;
+  color: white;
+  padding-right:25px;
+}
+
+#aboutTitle {
+	text-align: center;
+	color: white;
+}
+
+#aboutTitle p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#aboutTitle .firstHead{
+	margin-top: 25px;
+}
+
+#aboutContent {
+	margin-top: 0;
+	width: 100%;
+	height: 510px;
+	background-image:url(../img/food10.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#containerC{
+	padding-top: 80px;
+	margin-left: 250px;
+}
+
+#containerC p {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+#simpleline{
+	float: left;
+	width: 150px;
+}
+
+
+/* 2nd Content */
+#aboutContent2 {
+	margin-top: 0;
+	width: 100%;
+	height: 510px;
+	background-image:url(../img/team1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#aboutContent2 p {
+	float: right;
+	text-align: right;
+	margin-right: 250px;
+	clear: right;
+	color: #FFF;
+}
+
+#containerC2 {
+	padding-top: 80px;
+}
+
+#containerC2 p {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	float: right;
+	clear: both;
+	color: #FFF;
+}
+
+#simpleline2{
+	float: right;
+	width: 150px;
+	clear: right;
+	margin-right: 250px;
+}
+/* 2nd Content */
+
+
+
+#kambings4{
+	background-color: #181818;
+	width: 100%;
+	height: 550px;
+}
+
+#kambings4 .titleKambings{
+	text-align: center;
+	font-family: UniSansHeavy;
+	font-size: 55px;
+	color: #FFF;
+	padding-top: 100px;
+	margin-top: 0px;
+}
+
+#kambings4 ul li{
+	display: inline;
+	list-style-type: none;
+	color: #FFF;
+	margin: 0 auto;
+}
+
+#kambings4 h3{
+	font-family: UniSansThin;
+	font-size: 20px;
+	color: #FFF;
+	bottom: 0;
+	outline: none;
+	text-decoration: none;
+}
+
+#empatpictures {
+	text-align:center;
+	margin-top: 20px;
+}
+
+#empatpictures td {
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+#empatpictures_tr{
+	text-align:center;
+}
+
+.sliding-middle-out {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 3px;
+	margin-top: 10px;
+}
+.sliding-middle-out:after {
+	margin-top: 10px !important;
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+.sliding-middle-out:hover:after {
+	margin-top: 10px;
+	width: 100%;
+	background: #67da6d;
+}
+/* END ABOUT */
+
+/* START FEEDBACK */
+#feedback {
+	background-color: #FFF;
+	width: 100%;
+	height: 455px;
+	margin-top: 100px;
+	margin-bottom: 150px;
+}
+
+#feedback .titleFeedback {
+	font-family: UniSansHeavy;
+	text-align: center;
+	font-size: 52px;
+	margin-top: 45px;
+	margin-bottom: 0;
+}
+
+.form-reg-feedback{
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+}
+.form-reg-feedback input[type=text],
+.form-reg-feedback input[type=password],
+.form-reg-feedback textarea {
+	background-color: transparent;
+	width: 250px;
+	height: 50px;
+	outline: none;
+	padding-left: 20px;
+	font-family: SkModern;
+	font-size: 16px;
+	color: #181818;
+	border: solid 1px #181818;
+}
+.form-reg-feedback input[type=button],
+.form-reg-feedback input[type=submit] {
+	display: block;
+	margin: 0 auto;
+	width: 545px;
+	height: 50px;
+	outline: none;
+	background-color: #67da6d;
+	color: #FFF;
+	font-family: UniSansHeavy;
+	font-size: 20px;
+}
+/* END FEEDBACK */
+/* PARALLAX */
+.parallax {
+    /* The image used */
+	background-image: url(../img/cooking1.jpg);
+
+    /* Set a specific height */
+    min-height: 650px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* END OF PARALLAX */
+
+/* START OF FAQ */
+#faq .titleFAQ{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-align: center;
+	font-family: UniSansHeavy;
+	font-size: 55px;
+	color: #FFF;
+}
+#hrFAQ {
+	margin-top: 0;
+	width: 60px;
+	margin-bottom: 65px;
+}
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+	display: block;
+	margin: 0 auto;
+    width: 50%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 22px;
+    transition: 0.4s;
+	font-family: UniSansThin;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+div.panel {
+	font-family: UniSansThin;
+	display: block;
+	margin: 0 auto;
+    width: 48%;
+    padding: 0 18px;
+    background-color: transparent;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+	color: #FFF;
+	font-size: 22px;
+}
+/* END OF FAQ */
+
+/* FOOTER */
+#footer{
+	margin-left: 350px;
+	text-align: center;
+}
+
+#footer img{
+	height: 110px;
+	width: 110px;
+}
+
+#footer p{
+	font-family: UniSansThin;
+	margin: 0;
+}
+
+#footer h3{
+	font-family: UniSansHeavy;
+	background-color: #C9C9C9;
+	display: block;
+	width: 350px;
+	border: solid 8px #C9C9C9;
+	margin-left: auto;
+    margin-right: auto;
+	margin-top: 0;
+}
+
+#footer-links{
+	margin: 0 auto;
+	display: inline-block;
+	position: relative;
+	bottom: 10px;
+}
+
+#social-links img{
+	width: 25px;
+	height: 25px;
+}
+/* END FOOTER */
+
+/* FOOTER NORMAL */
+
+#footer-normal{
+	text-align: center;
+	background-color: #181818;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#footer-normal img{
+	height: 110px;
+	width: 110px;
+}
+
+#footer-normal p{
+	font-family: UniSansThin;
+	margin: 0;
+	color: #FFF;
+	font-size: 20px;
+}
+
+#footer-normal h3{
+	font-family: UniSansHeavy;
+	background-color: #FFF;
+	display: block;
+	width: 350px;
+	border: solid 8px #FFF;
+	margin-left: auto;
+    margin-right: auto;
+	margin-top: 7px;
+}
+
+#social-links-normal img{
+	width: 25px;
+	height: 25px;
+}
+
+/* END OF FOOTER NORMAL *I/
+
+/* COUNTDOWN */
+#cdBody {
+	text-align: center;
+	background: #181818;
+	font-family: sans-serif;
+	font-weight: 100;
+	padding-top: 4%;
+}
+
+#cdTitle {
+	color: #FFF;
+	font-size: 48px;
+	margin: 10px 0px 20px;
+	font-family: UniSansHeavy;
+}
+
+#clockdiv {
+	font-family: UniSansHeavy;
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 30px;
+	padding-left: 8px;
+}
+
+#clockdiv > div {
+	padding: 10px;
+	background: #292929;
+	display: inline-block;
+}
+
+#clockdiv div > span {
+	padding: 15px;
+	border-radius: 3px;
+	background: #292929;
+	display: inline-block;
+}
+
+.smalltext {
+	padding-top: 5px;
+	font-size: 16px;
+}
+
+.notifyMe {
+	background-color:transparent;
+	border:1px solid #FFF;
+	display:inline-block;
+	cursor:pointer;
+	color:#FFF;
+	font-family:UniSansThin;
+	font-size:17px;
+	height: 60px;
+	width: 335px;
+	text-decoration:none;
+	transition: 0.4s;
+}
+.notifyMe:hover {
+	background-color:#67da6d;
+	border: none;
+	color: #FFF;
+}
+/* END FOR COUNTDOWN */
+
+/* TOPRIGHT */
+
+.topright {
+	font-family:SkModern;
+	position:absolute;
+	top:50px;
+	right:50px;
+	outline: none;
+	border: none;
+	color: #FFF;
+}
+
+.topright img {
+	vertical-align: middle;
+	padding-right:10px;
+	padding-bottom:5px;
+}
+/* END OF TOPRIGHT */
+
+/* START OF LOGIN */
+.SignOutside {
+	padding-top: 5px;
+	width: 17.2em;
+	height: 11px;
+	border-bottom: 1px solid white;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+}
+.SignInside {
+	font-family: UniSansThin;
+	font-size: 20px;
+	background-color: #181818;
+	padding: 0 10px;
+	color: #FFF;
+}
+#header img {
+	display: block;
+	margin: 0 auto;
+	padding-right: 10px;
+}
+
+.form {
+	padding: 0;
+	padding-top: 10px;
+	list-style-type: none;
+}
+
+.form input[type=text],
+.form input[type=password] {
+	display: block;
+	margin: 0 auto;
+	background-color: transparent;
+	width: 250px;
+	height: 50px;
+	outline: none;
+	padding-left: 20px;
+	font-family: SkModern;
+	font-size: 16px;
+	color: #FFF;
+	border: solid 1px white;
+}
+
+.form input[type=button],
+.form input[type=submit] {
+	display: block;
+	margin: 0 auto;
+	width: 273px;
+	height: 50px;
+	outline: none;
+	background-color: #FFF;
+	color: #000;
+	font-family: UniSansHeavy;
+}
+/* REGISTER PAGE */
+.form-reg{
+	padding: 0;
+	padding-top: 25px;
+	list-style-type: none;
+	text-align: center;
+}
+.form-reg input[type=text],
+.form-reg input[type=password] {
+	background-color: transparent;
+	width: 250px;
+	height: 50px;
+	outline: none;
+	padding-left: 20px;
+	font-family: SkModern;
+	font-size: 16px;
+	color: #FFF;
+	border: solid 1px white;
+}
+.form-reg input[type=button],
+.form-reg input[type=submit] {
+	display: block;
+	margin: 0 auto;
+	width: 545px;
+	height: 50px;
+	outline: none;
+	background-color: #FFF;
+	color: #000;
+	font-family: UniSansHeavy;
+}
+.RegOutside {
+	padding-top: 5px;
+	width: 34.1em;
+	height: 11px;
+	border-bottom: 1px solid white;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+}
+/* END OF REGISTER PAGE */
+#usefullinks {
+	text-align: center;
+	color: white;
+	font-family: SkModern;
+	padding-bottom: 30px;
+}
+#usefullinks a:link, a:visited, a:focus {
+	color: #67da6d;
+	text-decoration: none;
+	transition: 0.3s;
+}
+#usefullinks a:hover {
+	color: #29572b;
+}
+#usefullinks a:active{
+	color: #67da6d;
+}
+#vid {
+	margin-left:380px;
+	
+}
+
+/* END OF LOGIN*/
+
+#kambing{
+	text-align:center;
+}
